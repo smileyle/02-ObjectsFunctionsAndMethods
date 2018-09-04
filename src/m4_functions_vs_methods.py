@@ -83,14 +83,12 @@ def main():
 
     turtle3('blue', 10)
 
+    ###########################################################################
+    # When the TODOs ask you to test YOUR code, put YOUR tests below this:    #
+    ###########################################################################
     try_methods()
-
     try_functions()
-
-    ###########################################################################
-    # When the TODOs ask you to test YOUR code, put YOUR tests below this:
-    ###########################################################################
-
+    try_methods_and_functions()
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
 
@@ -175,12 +173,12 @@ def turtle3(color, thickness):
 
 
 def try_methods():
-   scrappy = rg.SimpleTurtle('turtle')
-   scrappy.pen = rg.Pen('brown', 5)
-   scrappy.forward(150)
-   scrappy.left(90)
-   scrappy.forward(50)
-   scrappy.forward(-100)
+    scrappy = rg.SimpleTurtle('turtle')
+    scrappy.pen = rg.Pen('brown', 5)
+    scrappy.forward(150)
+    scrappy.left(90)
+    scrappy.forward(50)
+    scrappy.forward(-100)
 
     # """
     # Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
@@ -229,8 +227,15 @@ def try_methods_and_functions():
     fred.speed = 1
     draw_many_squares(fred, 2, 100, 30)
     fred.speed = 5
-    fred.pen('red')
-
+    fred.pen = rg.Pen('red', 5)
+    draw_many_squares(fred, 10, 50, 15)
+    fred.speed = 100
+    fred.pen = 35
+    draw_many_squares(fred, 8, 300, 60)
+    fred.pen = rg.Pen('black', 3)
+    fred.backward(200)
+    fred.draw_circle(30)
+    fred.draw_square(50)
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
