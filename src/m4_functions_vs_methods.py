@@ -230,7 +230,7 @@ def try_methods_and_functions():
     fred.pen = rg.Pen('red', 5)
     draw_many_squares(fred, 10, 50, 15)
     fred.speed = 100
-    fred.pen = 35
+    fred.pen = rg.Pen('red', 35)
     draw_many_squares(fred, 8, 300, 60)
     fred.pen = rg.Pen('black', 3)
     fred.backward(200)
